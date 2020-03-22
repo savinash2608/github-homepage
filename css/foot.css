@@ -1,0 +1,166 @@
+footer {
+    width: 100%;
+    position: relative;
+    color: rgb(95, 103, 112);
+}
+
+
+
+footer .h-bx {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+footer .mn-bx, footer .mn-bx2 {
+    width: 100%;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+footer .mn-bx {
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #586069;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+footer a:hover {
+    color: #0366d6;
+    text-decoration: underline;
+}
+
+
+footer .bx1 a {
+    text-decoration: none !important;
+}
+footer h1 {
+    font-size: 2rem;
+    color: #24292E !important;
+
+}
+
+footer .mn-bx, footer .mn-bx2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+footer .bx2, footer .mn-bx2, footer .credits, footer .social-lnks {
+    display: flex;
+}
+
+footer .bx2 {
+    flex-wrap: wrap !important;
+}
+
+footer .bx2 ul {
+    width: 50% ;
+    justify-content: space-between;
+
+    font-size: 14px;
+    margin-top: 24px ;
+}
+
+footer .lt-head {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace!important;;
+}
+
+footer .bx2 li {
+    margin: 16px 0;
+    padding-right: 16px;
+}
+
+footer .mn-bx2 {
+    margin-top: 120px;
+    margin-bottom: 24px;
+    flex-wrap: wrap-reverse;
+}
+
+footer .credits, footer .social-lnks {
+    width: 100%;
+}
+
+
+footer .credits {
+    margin-top: 16px;
+}
+
+footer .credits li {
+    margin-right: 16px;
+    font-size: 12px;
+}
+
+footer img {
+    filter: grayscale(1);
+    height: 18px;
+    margin-right: 16px;
+}
+
+
+@media (min-width: 544px) {
+    footer .mn-bx, footer .mn-bx2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    footer .bx2 ul {
+        width: 25%;
+    }
+
+    footer .credits {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    footer .social-lnks {
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    footer img {
+        margin-right: 0;
+        margin-left: 16px;
+    }
+    
+}
+
+@media (max-width: 1011px) {
+    footer .bx1 {
+        width: 100%;
+    }
+    
+    footer .bx2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1012px) {
+    footer .mn-bx {
+        margin-top: 80px;
+    }
+    
+    footer .mn-bx, footer .mn-bx2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+
+    footer .bx1 {
+        width: 35%;
+    }
+    
+    footer .bx2 {
+        width: 65%;
+    }
+
+    footer .bx2 ul {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,249 @@
+#sec-3 {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#sec-3 .box1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background-color: #FAFBFC;
+    top: 0;
+    left: 0;
+}
+
+#sec-3 .container{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+#sec-3 .container::before {
+    content: '';
+    position: absolute;
+    background-image: radial-gradient(rgb(220, 225, 230) 20%, hsl(1, 66%, 49%, 0%) 0%);
+    background-position: 0 0;
+    background-size: 11px 11px;
+    height: 100%;
+    width: 35%;
+    margin-left: 5px;
+    top: -40px;
+    left: -35px;
+}
+
+#sec-3 .box1 {
+    width: 100%;
+    height: auto;
+    padding: 128px 16px 80px 16px;
+}
+
+#sec-3 .box2 {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px 24px;
+}
+
+
+
+.sec-3-box {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 48px;
+}
+
+#sec-3 #top-right-svg {
+    width: 400px;
+}
+
+#sec-3 .extra-icons {
+    position: absolute;
+    top: -210px;
+    right: 0%;
+}
+
+#sec-3 .box3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec-3 .box3-1 {
+    margin: 16px 0;
+    width: 30%;
+}
+#sec-3 .box3-2 {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+#sec-3 .box3-1 h1 {
+    color: #24292E;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#sec-3 .box3-1 p {
+    color: #586081;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+#sec-3 .inner-box-1, .inner-box-2 {
+    width: 40%;
+    min-width: 200px;
+    height: 258px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec-3 .inner-box-1 h2, .inner-box-2 h2 {
+    color: #24292E;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#sec-3 .inner-box-1 p, .inner-box-2 p {
+    color: #586081;
+    font-size: 14px;
+    margin-top: 3px;
+    text-align: center;
+}
+    
+
+#sec-3 .inner-box-1 button {
+    height: 55px;
+    margin-top: 30px;
+    background: #1074E7;
+    border: 1px solid #1074E7;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 18px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#sec-3 .inner-box-1 button:hover {
+    background: rgb(10, 98, 199);
+}
+
+#sec-3 .inner-box-2 button {
+    height: 55px;
+    margin-top: 30px;
+    background: white;
+    border: 1px solid #1074E7;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1074E7;
+    padding: 18px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#sec-3 .inner-box-2 .right-arrow, #sec-5 .right-arrow{
+    width: 10px;
+    fill: rgb(9, 83, 167);
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+#sec-3 .inner-box-2 button:hover, #sec-5 button:hover {
+    border: 1px solid rgb(6, 70, 143);
+}
+
+#sec-3 .inner-box-2 button:hover > .right-arrow, #sec-5 button:hover > .right-arrow{
+    transform: translateX(5px);
+}
+
+#sec-3 svg{
+    width: 50px;
+    fill: #2188FF;
+}
+
+
+@media (max-width: 1011px) {
+
+    #sec-3 .box3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sec-3 .box3-1, #sec-3 .box3-2 {
+        width: 100%;
+    }
+
+    #sec-3 .box3-1 h1, #sec-3 .box3-1 p {
+        text-align: center;
+    }
+
+    #sec-3 .box3-2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sec-3 .inner-box-1, .inner-box-2 {
+        height: 240px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    #sec-3 .box1 {
+        padding: 48px 16px 40px 16px;
+    }
+
+    #sec-3 .box3-1 h1 {
+        font-size: 28px;
+    }
+
+    #sec-3 .extra-icons {
+        top: 0;
+        right: 0;
+        height: 0;
+        width: 0;
+    }
+
+    #sec-3 #top-right-svg {
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        width: 0;
+    }
+
+    #sec-3 .container::before {
+        width: 75%;
+    }
+
+    .sec-3-box {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 543px) {
+    #sec-3 .box3-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sec-3 .box2 {
+        padding: 0px;
+    }
+    
+
+}

@@ -1,0 +1,386 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    position: relative;
+    background-color: #24292E;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.logo-container {
+    width: 56px;
+    height: 34px;
+}
+
+.logo {
+    width: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu-and-rest {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.dropdown .menu button, .ham-dropdown .ham-menu button {
+    background: none;
+    height: 55px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.dropdown button:hover, .dropdown button a:hover {
+    color: darkgray;
+}
+
+.dropdown button:hover > .drop-down-svg{
+    fill: lightgray;
+
+}
+
+.dropdown button, .dropdown button a, .menu a {
+    color: white;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.menu {
+    position: relative;
+    margin: 0 16px 0 0;
+}
+
+.menu ul {
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    margin-top: 2px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    padding: 10px 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.dropdown > .menu > button:hover + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.menu ul:hover{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+.dropdown .hr {
+    height: 1px;
+    background-color: #2B3137;
+    opacity: 0.3;
+    margin: 25px 10px;
+}
+
+.dropdown li, .ham-dropdown li {
+    margin: 5px 10px;
+    transition: all 0.2s ease;
+}
+
+.dropdown li, .dropdown a, .ham-dropdown li, .ham-dropdown a {
+    font-size: 14px;
+    color: #2B3137;
+}
+
+.dropdown ul a:hover, .ham-dropdown ul a:hover{
+    color: rgb(39, 113, 250);
+}
+
+.dropdown .ac {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu ul a, .ham-menu ul a{
+    text-decoration: none;
+    color: #24292E;
+}
+.dropdown .drop-down-svg, .ham-dropdown .drop-down-svg {
+    width: 11px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 1px;
+    fill: #7D8082;
+    transition: all 0.2s ease;
+}
+
+
+.dropdown .right-, .ham-dropdown .right-arrow {
+    width: 10px;
+    opacity: 0.7;
+    fill: #2B3137;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.2s ease;
+}
+
+.dropdown a:hover > .right-arrow, .ham-dropdown a:hover > .right-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bold-menu {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-sign {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    height: 36px;
+    width: 256px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    position: relative;
+    height: 36px;
+    width: 240px;
+    color: #000000;
+    background: #3F4448;
+    border: none;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-right: 16px;
+    outline: none;
+}
+
+.search-bar::before {
+    content: 'Search GitHub';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    font-size: 14px;
+    color: rgb(141, 139, 139);
+    z-index: 1;
+}
+
+.search-bar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    background-image: url(../images/search-key-slash.svg);
+    width: 19px;
+    height: 20px;
+    z-index: 1;
+}
+
+.search-bar div {
+    font-size: 14px;
+    color: #9d9fa3;
+    font-weight: 450;
+    padding-left: 8px;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.search-bar input:focus {
+    background: #FFFFFF;
+    border: none;
+    z-index: 2;
+}
+
+#search-sign a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+#search-sign a:hover{
+    color: darkgray;
+}
+
+.sign-in, .sign-up {
+    transition: all 0.2s ease;
+}
+
+.sign-in {
+    margin-right: 16px;
+}
+
+.sign-up {
+    border: #D1D5DA solid 1px;
+    border-radius: 2px;
+    padding: 5px 8px;
+}
+
+#nav {
+    position: relative;
+}
+
+#sign-ham {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sign-ham .sign-up {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#ham-icon, .ham-icon{
+    width: 0px;
+    height: 0px;
+}
+
+
+
+
+#sign-ham .ham-icon {
+    border: none;
+    background: none;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1011px) {
+    nav {
+        height: 50px;
+    }
+
+    .banner {
+        height: 34px;
+        padding: 0 40px;
+    }
+
+    .dropdown {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        width: 0px;
+    }
+
+    .dropdown button, .dropdown .drop-down-svg, .dropdown .right-arrow, .dropdown ul, .dropdown li, .dropdown a, .dropdown hr, .search-bar, .search-bar input, .search-bar div, #search-sign a, #search-sign .sign-in,#search-sign .sign-up {
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        font-weight: 0;
+    }
+
+    #search-sign {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        width: 0px;
+    }
+
+    #ham-icon {
+        fill: white;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+
+    .ham-icon {
+        height: auto;
+        width: auto;
+    }
+
+    #sign-ham {
+        width: auto;
+        position: relative;
+        opacity: 1;
+        pointer-events: all;
+    }   
+    
+    #sign-ham .sign-up {
+        background: none;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        padding: 5px 8px;
+        margin-right: 32px;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 543px) {
+    .banner {
+        padding: 0 16px;
+    }
+
+    #sign-ham .sign-up {
+        margin-right: 16px;
+    }
+}

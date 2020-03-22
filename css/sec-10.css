@@ -1,0 +1,255 @@
+#sec-10 {
+    width: 100%;
+    position: relative;
+}
+
+#sec-10 .box1 {
+    max-width: 1280px;
+    width: 100%;
+    padding-top: 180px;
+    margin: 0 auto;    
+}
+
+#sec-10 .mn-box {
+    width: 100%;
+    padding: 0 16px;
+}
+
+#sec-10 .inr-box1 {
+    margin: 0 auto;
+    padding: 0 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-10 .inr-box1 h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: gray;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#sec-10 .inr-box1 h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #24292E;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#sec-10 .inr-box1 p {
+    font-size: 1.3rem;
+    color: gray;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+
+#sec-10 .right-arrow{
+    width: 12px;
+    fill: rgb(23, 89, 163);
+    transition: all 0.3s ease;
+    transform: translateX(2px);
+}
+
+#sec-10 .inr-box1 .btn:hover > .right-arrow {
+    transform: translateX(5px);
+}
+
+#sec-10 .inr-box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#sec-10 .block {
+    padding: 16px;
+}
+
+#sec-10 .card {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px 0 16px;
+    box-shadow: 0 2px 4px rgba(27,31,35,.15);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#sec-10 .rusell-keith {
+    background-image: url(../images/man-holding-a-silver-tablet-listening-to-music-3782183.jpg);
+}
+
+#sec-10 .kris-nova {
+    background-image: url(../images/woman-wearing-gray-notch-lapel-suit-jacket-2381069.jpg);
+
+}
+
+#sec-10 .evan-you {
+    background-image: url(../images/man-wearing-blue-suit-2897883.jpg);
+}
+
+#sec-10 .jess-frazelle {
+    background-image: url(../images/woman-wearing-gray-blazer-writing-on-dry-erase-board-1181534.jpg);
+}
+
+#sec-10 .card .img {
+    position: relative;
+    height: 200px;
+
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: cover;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+
+#sec-10 .card .img::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 70px;
+    height: 52px;
+    background-color: #0366d6;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+#sec-10 .card .img::after {
+    content: '';
+    background-image: url('../images/ex-lnk.png');
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+#sec-10 .right-arrow{
+    width: 10px;
+    fill: rgb(9, 83, 167);
+    transform: translateX(-6px);
+    transition: all 0.2s ease;
+}
+
+#sec-10 .card:hover > .rest > .btn > .right-arrow {
+    transform: translateX(1px);
+}
+
+
+#sec-10 .card:hover > .img::before, #sec-10 .card:hover > .img::after {
+    transform: translate(8px, -8px);
+    opacity: 1;
+} 
+
+#sec-10 .rest {
+    margin-top: 1em;
+    width: 100%;
+}
+
+#sec-10 a {
+    text-decoration: none;
+}
+
+#sec-10 .card h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+    color: black;
+}
+
+#sec-10 .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #0366d6;
+    font-size: 0.9rem;
+    border-top: 1px solid lightgray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#sec-10 .card p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.685);
+    flex: auto;
+}
+
+
+@media (min-width: 320px) and (max-width: 543px) {
+    #sec-10 .box1 {
+        padding-top: 80px;
+    } 
+
+    #sec-10 .inr-box1 {
+        padding: 0 16px;
+    }
+
+    #sec-10 .block {
+        width: 100%;
+        padding: 8px 0;
+    }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    #sec-10 .box1 {
+        padding-top: 80px;
+    } 
+
+    #sec-10 .inr-box1 {
+        padding: 0 48px;
+    }
+
+    #sec-10 .inr-box1 h2 {
+        max-width: 400px;
+        line-height: 1;
+    }
+
+    #sec-10 .block {
+        width: 50%;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    #sec-10 .mn-box {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1011px) {
+    #sec-10 .box1 {
+        padding-top: 180px;
+    } 
+
+    #sec-10 .inr-box1 h2 {
+        font-size: 3.3rem;
+    }
+
+    #sec-10 .inr-box1 p {
+        max-width: 600px;
+    }
+
+    #sec-10 .inr-box2 .block {
+        width: 33.33333%;
+    }
+}
+
+@media (min-width: 1012px) {
+    #sec-10 .block {
+        width: 25%;
+    }
+}

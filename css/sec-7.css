@@ -1,0 +1,206 @@
+#sec-7 {
+    width: 100%;
+}
+
+#sec-7 .box1 {
+    width: 100%;
+    padding: 24px 0 0 0;
+}
+
+#sec-7 .mn-box {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sec-7 .mn-box h2 {
+    font-size: 1.4rem;
+    font-weight: 450;
+    color: #5A626B;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#sec-7 .inr-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#sec-7 .block {
+    width: 25%;
+    padding: 16px;
+}
+
+#sec-7 .card {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px 0 16px;
+    box-shadow: 0 2px 4px rgba(27,31,35,.15);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#sec-7 .mgm-resorts {
+    background-image: url(../images/resort.jpg);
+}
+
+#sec-7 .nationwide {
+    background-image: url(../images/jet.jpg);
+
+}
+
+#sec-7 .sap {
+    background-image: url(../images/pc.jpg);
+}
+
+#sec-7 .spotify {
+    background-image: url(../images/office.jpg);
+}
+
+#sec-7 .card .img {
+    position: relative;
+    height: 200px;
+
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: cover;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+
+#sec-7 .card .img::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 70px;
+    height: 52px;
+    background-color: #0366d6;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+#sec-7 .card .img::after {
+    content: '';
+    background-image: url('../images/ex-lnk.png');
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+#sec-7 .right-arrow{
+    width: 10px;
+    fill: rgb(9, 83, 167);
+    transform: translateX(-6px);
+    transition: all 0.2s ease;
+}
+
+#sec-7 .card:hover > .rest > .btn > .right-arrow {
+    transform: translateX(1px);
+}
+
+
+#sec-7 .card:hover > .img::before, #sec-7 .card:hover > .img::after {
+    transform: translate(8px, -8px);
+    opacity: 1;
+} 
+
+#sec-7 .rest {
+    margin-top: 1em;
+    width: 100%;
+}
+
+#sec-7 a {
+    text-decoration: none;
+}
+
+#sec-7 .card h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+    color: black;
+}
+
+#sec-7 .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #0366d6;
+    font-size: 0.9rem;
+    border-top: 1px solid lightgray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#sec-7 .card p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.685);
+    flex: auto;
+}
+
+
+@media (min-width: 320px) and (max-width: 544px) {
+    #sec-7 .block {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #sec-7 .mn-box {
+        padding: 0 8px;
+    }
+
+    #sec-7 .mn-box h2 {
+        margin: 0 8px 8px 8px;
+    }
+}
+
+@media (min-width: 544px) and (max-width: 767px){
+    #sec-7 .block {
+        width: 50%;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    #sec-7 .mn-box {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1011px) {
+    #sec-7 .block {
+        width: 33.33333%;
+    }
+}
+
+@media (min-width: 1012px) {
+    #sec-7 .block {
+        width: 25%;
+    }
+}
+
+
+
+
+
+
+
+

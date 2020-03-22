@@ -100,7 +100,6 @@
 
 #sec-7 .card:hover > .btn > .right-arrow { transform: translateX(3px);}
 
-
 #sec-7 .card:hover > .img::before, #sec-7 .card:hover > .img::after {
     transform: translate(8px, -8px);
     opacity: 1;

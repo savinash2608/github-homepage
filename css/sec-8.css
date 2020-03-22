@@ -64,25 +64,19 @@
     border: 1px solid rgb(55, 148, 255);
     padding: 1.2em 2em;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: border 300ms ease;
 }
 
+#sec-8 .inr-box1 .btn:hover { border: 1px solid rgb(18, 87, 165);}
 
-
-#sec-8 .inr-box1 .btn:hover {
-    border: 1px solid rgb(18, 87, 165);
-}
-
-#sec-8 .right-arrow{
+#sec-8 .right-arrow {
     width: 12px;
     fill: rgb(23, 89, 163);
-    transition: all 0.3s ease;
+    transition: transform 300ms ease;
     transform: translateX(2px);
 }
 
-#sec-8 .inr-box1 .btn:hover > .right-arrow {
-    transform: translateX(5px);
-}
+#sec-8 .inr-box1 .btn:hover > .right-arrow { transform: translateX(5px);}
 
 #sec-8 .inr-box2 {
     max-width: 1012px;
@@ -101,9 +95,7 @@
     padding: 16px 36px;
 }
 
-#sec-8 .lft-box1, #sec-8 .lft-box2 {
-    margin-bottom: 2rem;
-}
+#sec-8 .lft-box1, #sec-8 .lft-box2 { margin-bottom: 2rem;}
 
 #sec-8 .lft-box h1 {
     font-size: 1.4rem;
@@ -122,7 +114,6 @@
     width: 100%;
     display: grid;
     place-items: center;
-
 }
 
 #sec-8 .rt-box img {
@@ -147,12 +138,10 @@
     border-radius: 3px;
     padding: 16px 24px;
     display: flex;
-    transition: all 0.2s ease;
+    transition: box-shadow 200ms ease;
 }
 
-#sec-8 .inr-box3:hover {
-    box-shadow: 0 2px 16px rgba(163, 163, 163, 0.281);
-}
+#sec-8 .inr-box3:hover { box-shadow: 0 2px 16px rgba(163, 163, 163, 0.281);}
 
 #sec-8 .inr-box3::before {
     content: '';
@@ -164,7 +153,7 @@
     width: 35%;
     top: 0px;
     left: 0px;
-    transition: all 0.4s ease;
+    transition: top 400ms ease, left 400ms ease;
     z-index: -2;
 }
 
@@ -178,7 +167,7 @@
     width: 35%;
     bottom: 0;
     right: 0;
-    transition: all 0.4s ease;
+    transition: bottom 400ms ease, right 400ms ease;
     z-index: -1;
 }
 
@@ -192,19 +181,14 @@
     right: -24px;
 }
 
-#sec-8  .container .lft-box {
-    width: 8%;
-}
+#sec-8  .container .lft-box { width: 8%;}
 
 #sec-8 .container .rt-box {
     width: 92%;
     padding: 16px 16px 16px 24px;
 }
 
-#sec-8 .inr-box3 img {
-    width: 52px;
-
-}
+#sec-8 .inr-box3 img { width: 52px;}
 
 #sec-8 .inr-box3 .rt-box h1{
     font-size: 1.2rem;
@@ -225,58 +209,36 @@
     color: #227EE9;
 }
 
-#sec-8 .inr-box3 .rt-box .btn {
-    cursor: pointer;
-}
+#sec-8 .inr-box3 .rt-box .btn { cursor: pointer;}
 
-#sec-8 .inr-box3 .rt-box .btn:hover > .right-arrow{
-    transform: translateX(6px);
-}
+#sec-8 .inr-box3 .rt-box .btn:hover > .right-arrow{ transform: translateX(6px);}
 
-
+/* Media queries for sec-8.css */
 @media (min-width : 320px) {
-    #sec-8 .inr-box1 {
-        padding: 0 16px;
-    }
+    #sec-8 .inr-box1 { padding: 0 16px;}
 
-    #sec-8 .inr-box1 .btn{
-        margin: 0 -8px;
-    }
+    #sec-8 .inr-box1 .btn{ margin: 0 -8px;}
 
     #sec-8 .inr-box1 .btn:before {
         content: 'How GitHub Enterprise works';
         position: relative;
     }
 
-    #sec-8 .inr-box2 {
-        padding: 0 16px;
-    }
+    #sec-8 .inr-box2 { padding: 0 16px;}
 
-    #sec-8 .lft-box {
-        padding: 16px 0;
-    }
+    #sec-8 .lft-box { padding: 16px 0;}
 
-    #sec-8 .container {
-        margin: 0 16px;
-    }
+    #sec-8 .container { margin: 0 16px;}
 
-    #sec-8 .lft-box2 {
-        margin-bottom: 0;
-    }
+    #sec-8 .lft-box2 { margin-bottom: 0;}
 }
 
 @media (min-width : 544px) {
-    #sec-8 .inr-box1 {
-        padding: 0 48px;
-    }
+    #sec-8 .inr-box1 { padding: 0 48px;}
 
-    #sec-8 .lft-box h1{
-        font-size: 1.2rem;
-    }
+    #sec-8 .lft-box h1 { font-size: 1.2rem;}
 
-    #sec-8 .inr-box2 {
-        padding: 0 74px;
-    }
+    #sec-8 .inr-box2 { padding: 0 74px;}
 
     #sec-8 .inr-box1 .btn:before {
         content: 'Learn how GitHub Enterprise works';
@@ -297,23 +259,13 @@
         padding: 16px 0;
     }
 
-    #sec-8 .rt-box {
-        width: 47%;
-    }
+    #sec-8 .rt-box { width: 47%;}
 
-    #sec-8 .inr-box1 h2 {
-        font-size: 3.3rem;
-    }
+    #sec-8 .inr-box1 h2 { font-size: 3.3rem;}
     
-    #sec-8 .box2 {
-        padding: 80px 0;
-    }
+    #sec-8 .box2 { padding: 80px 0;}
 
-    #sec-8 .inr-box1 p {
-        width: 70%;
-    }
+    #sec-8 .inr-box1 p { width: 70%;}
 
-    #sec-8 .container {
-        width: 53%;    
-    }
+    #sec-8 .container { width: 53%;}
 }

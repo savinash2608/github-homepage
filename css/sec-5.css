@@ -30,15 +30,25 @@
     color: #1074E7;
     padding: 18px 35px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: border 200ms ease;
 }
+
+#sec-5 button:hover { border: 1px solid rgb(6, 70, 143); }
+
+#sec-5 .right-arrow{
+    width: 10px;
+    fill: rgb(9, 83, 167);
+    transform: translateX(2px);
+    transition: transform 200ms ease;
+}
+
+#sec-5 button:hover > .right-arrow{ transform: translateX(5px); }
 
 #sec-5 h1{
     font-size: 15px;
     font-weight: 400;
     color: #586069;
     letter-spacing: 1.5px;
-
 }
 
 #sec-5 h2 {
@@ -58,22 +68,13 @@
     margin-top: 12px;
 }
 
-@media (max-width: 1011px) {
-    #sec-5 .box2 {
-        padding: 0 40px;
-    }
-}
+/* Media queries for sec-5.css */
+@media (max-width: 1011px) { #sec-5 .box2 { padding: 0 40px;}}
 
 @media (max-width: 767px) {
-    #sec-5 .box2 {
-        padding: 0 16px;
-    }
+    #sec-5 .box2 { padding: 0 16px;}
 
-    #sec-5 h2 {
-        font-size: 42px;
-    }
+    #sec-5 h2 { font-size: 42px;}
 
-    #sec-5 p {
-        margin: 0;
-    }
+    #sec-5 p { margin: 0;}
 }

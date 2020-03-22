@@ -3,9 +3,7 @@
     position: relative;
 }
 
-#sec-9 .box1 {
-    margin-top: 40px;
-}
+#sec-9 .box1 { margin-top: 40px;}
 
 #sec-9 .mn-box {
     max-width: 1280px;
@@ -57,7 +55,7 @@
     border: 1px solid rgb(55, 148, 255);
     padding: 1.2em 2em;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: border 300ms ease;
 }
 
 #sec-9 .inr-box1 .btn:before {
@@ -65,26 +63,22 @@
     position: relative;
 }
 
-#sec-9 .inr-box1 .btn:hover {
-    border: 1px solid rgb(18, 87, 165);
-}
+#sec-9 .inr-box1 .btn:hover { border: 1px solid rgb(18, 87, 165);}
 
 #sec-9 .right-arrow{
     width: 12px;
     fill: rgb(23, 89, 163);
-    transition: all 0.3s ease;
+    transition: transform 300ms ease;
     transform: translateX(2px);
 }
 
-#sec-9 .inr-box1 .btn:hover > .right-arrow {
-    transform: translateX(5px);
-}
+#sec-9 .inr-box1 .btn:hover > .right-arrow { transform: translateX(5px);}
 
 #sec-9 .inr-box2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 190px;
+    min-height: 190px;
 }
 
 #sec-9 .img {
@@ -98,11 +92,10 @@
 #sec-9 .inr-box2 img {
     position: relative;
     width: 100%;
-
     padding: 24px;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: box-shadow 200ms ease;
 }
 
 #sec-9 .inr-box2 .img[alt="Slack"] {
@@ -140,9 +133,7 @@
     align-self: flex-start;
 }
 
-#sec-9 .inr-box2 img:hover {
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.055);
-}
+#sec-9 .inr-box2 img:hover { box-shadow: 0 8px 8px rgba(0, 0, 0, 0.055);}
 
 #sec-9 .img::before {
     content: '';
@@ -154,7 +145,7 @@
     bottom: -12px;
     background-image: url(../images/top-arrow.png);
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: opacity 200ms ease;
 }
 
 #sec-9 .img::after {
@@ -172,12 +163,10 @@
     background-color: #292929;
     border-radius: 1px;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: opacity 200ms ease;
 }
 
-#sec-9 .img:hover:before, #sec-9 .img:hover:after {
-    opacity: 1;
-}
+#sec-9 .img:hover:before, #sec-9 .img:hover:after { opacity: 1;}
 
 #sec-9 .inr-box3 {
     margin-top: 80px;
@@ -196,9 +185,7 @@
     font-weight: 500;
 }
 
-#sec-9 a {
-    text-decoration: none;
-}
+#sec-9 a { text-decoration: none;}
 
 #sec-9 .inr-box3 span{
     font-size: 1rem;
@@ -208,25 +195,15 @@
     color: #1772D9;
 }
 
-#sec-9 a:hover > .right-arrow {
-    transform: translateX(5px);
-}
+#sec-9 a:hover > .right-arrow { transform: translateX(5px);}
 
-
-
-
+/* Media queries for sec-9.css */
 @media (min-width : 320px) {
-    #sec-9 .box1 {
-        margin-top: 120px;
-    }
+    #sec-9 .box1 { margin-top: 120px;}
 
-    #sec-9 .inr-box1 {
-        padding: 0 16px;
-    }
+    #sec-9 .inr-box1 { padding: 0 16px;}
 
-    #sec-9 .inr-box1 .btn{
-        margin: 0 -8px;
-    }
+    #sec-9 .inr-box1 .btn { margin: 0 -8px;}
 
     #sec-9 .inr-box2 {
         display: flex;
@@ -245,23 +222,15 @@
         height: 0;
     }
 
-    #sec-9 .inr-box3 {
-        margin-top: 48px;
-    }
+    #sec-9 .inr-box3 { margin-top: 48px;}
 }
 
 @media (min-width : 544px) {
-    #sec-9 .inr-box1 {
-        padding: 0 48px;
-    }
+    #sec-9 .inr-box1 { padding: 0 48px;}
 
-    #sec-9 .lft-box h1{
-        font-size: 1.2rem;
-    }
+    #sec-9 .lft-box h1{ font-size: 1.2rem;}
 
-    #sec-9 .inr-box2 {
-        margin: 80px 40px 0 40px;
-    }
+    #sec-9 .inr-box2 { margin: 80px 40px 0 40px;}
 
     #sec-9 .inr-box2 .img[alt="Code Climate"] {
         position: relative;
@@ -271,22 +240,13 @@
         height: 96px;
     }
 
-    #sec-9 .inr-box3 {
-        margin-top: 80px;
-    }
+    #sec-9 .inr-box3 { margin-top: 80px;}
 }
 
 @media (min-width : 768px) {
-    #sec-9 .inr-box1 h2 {
-        font-size: 3.3rem;
-    }
+    #sec-9 .inr-box1 h2 { font-size: 3.3rem;}
 
-    #sec-9 .inr-box1 p {
-        max-width: 600px;
-    }
+    #sec-9 .inr-box1 p { max-width: 600px;}
 
-    #sec-9 .inr-box2 {
-        margin: 80px 36px 0 36px;
-    }
-    
+    #sec-9 .inr-box2 { margin: 80px 36px 0 36px;}    
 }

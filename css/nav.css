@@ -1,4 +1,4 @@
-* {
+nav * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -23,7 +23,7 @@ nav {
     justify-content: center;
 }
 
-.banner {
+nav .banner {
     width: 100%;
     height: 56px;
     display: flex;
@@ -31,66 +31,59 @@ nav {
     padding: 0 16px;
 }
 
-.logo-container {
+nav .logo-container {
     width: 56px;
     height: 34px;
 }
 
-.logo {
-    width: 32px;
-}
+nav .logo { width: 32px; }
 
-li {
-    list-style: none;
-}
+nav li { list-style: none; }
 
-ul {
+nav ul {
     padding: 0;
     margin: 0;
 }
 
-.dropdown-menu-and-rest {
+nav .dropdown-menu-and-rest {
     position: relative;
     flex-grow: 1;
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
 }
 
-.dropdown {
+nav .dropdown {
     display: flex;
     align-items: center;
     flex-flow: wrap;
 }
 
-.dropdown .menu button, .ham-dropdown .ham-menu button {
+nav .dropdown .menu button {
     background: none;
     height: 55px;
     border: none;
-    transition: all 0.2s ease;
+    transition: color 200ms ease;
 }
 
-.dropdown button:hover, .dropdown button a:hover {
-    color: darkgray;
-}
+nav .dropdown button:hover, nav .dropdown button a:hover, #search-sign a:hover { color: darkgray; }
 
-.dropdown button:hover > .drop-down-svg{
-    fill: lightgray;
+#search-sign a {transition: color 200ms ease; }
 
-}
+nav .dropdown button:hover > .drop-down-svg { fill: lightgray; }
 
-.dropdown button, .dropdown button a, .menu a {
+nav .dropdown button, nav .dropdown button a, nav .menu a {
     color: white;
     font-size: 16px;
-    transition: all 0.2s ease;
+    transition: color 200ms ease;
 }
-.menu {
+
+nav .menu {
     position: relative;
     margin: 0 16px 0 0;
 }
 
-.menu ul {
+nav .menu ul {
     z-index: 1;
     position: absolute;
     background-color: white;
@@ -105,75 +98,66 @@ ul {
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: all 0.4s ease;
+    transition: opacity 300ms ease, pointer-events 300ms ease, transform 300ms ease;
 }
 
-.dropdown > .menu > button:hover + ul {
+nav .dropdown > .menu > button:hover + ul {
     opacity: 1;
     pointer-events: all;
-    transform: translateY(0);
+    transform: translateY(-4px);
 }
 
-.menu ul:hover{
+nav .menu ul:hover{
     opacity: 1;
     pointer-events: all;
-    transform: translateY(0);
+    transform: translateY(-4px);
 }
-.dropdown .hr {
+
+nav .dropdown .hr {
     height: 1px;
     background-color: #2B3137;
     opacity: 0.3;
-    margin: 25px 10px;
+    margin: 16px 10px;
 }
 
-.dropdown li, .ham-dropdown li {
-    margin: 5px 10px;
-    transition: all 0.2s ease;
-}
+nav .dropdown li { margin: 5px 10px; }
 
-.dropdown li, .dropdown a, .ham-dropdown li, .ham-dropdown a {
+nav .dropdown li, nav .dropdown a {
     font-size: 14px;
     color: #2B3137;
 }
 
-.dropdown ul a:hover, .ham-dropdown ul a:hover{
-    color: rgb(39, 113, 250);
-}
+nav .dropdown ul a:hover { color: rgb(39, 113, 250); }
 
-.dropdown .ac {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.menu ul a, .ham-menu ul a{
+nav .menu ul a {
     text-decoration: none;
     color: #24292E;
 }
-.dropdown .drop-down-svg, .ham-dropdown .drop-down-svg {
+
+nav .dropdown .drop-down-svg{
     width: 11px;
     height: auto;
     margin-top: 5px;
     margin-left: 1px;
     fill: #7D8082;
-    transition: all 0.2s ease;
+    transition: fill 200ms ease;
 }
 
-
-.dropdown .right-, .ham-dropdown .right-arrow {
+nav .dropdown .right-arrow{
     width: 10px;
     opacity: 0.7;
     fill: #2B3137;
     opacity: 0;
     transform: translateX(-10px);
-    transition: all 0.2s ease;
+    transition: opacity 200ms ease, transform 200ms ease;
 }
 
-.dropdown a:hover > .right-arrow, .ham-dropdown a:hover > .right-arrow {
+nav .dropdown a:hover > .right-arrow {
     opacity: 1;
     transform: translateX(0);
 }
 
-.bold-menu {
+nav .bold-menu {
     font-weight: bolder;
     display: flex;
     justify-content: space-between;
@@ -184,7 +168,7 @@ ul {
     align-items: center;
 }
 
-.search-bar {
+nav .search-bar {
     position: relative;
     height: 36px;
     width: 256px;
@@ -192,7 +176,7 @@ ul {
     align-items: center;
 }
 
-.search-bar input {
+nav .search-bar input {
     position: relative;
     height: 36px;
     width: 240px;
@@ -205,7 +189,7 @@ ul {
     outline: none;
 }
 
-.search-bar::before {
+nav .search-bar::before {
     content: 'Search GitHub';
     position: absolute;
     top: 50%;
@@ -213,10 +197,11 @@ ul {
     left: 12px;
     font-size: 14px;
     color: rgb(141, 139, 139);
+    pointer-events: none;
     z-index: 1;
 }
 
-.search-bar::after {
+nav .search-bar::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -225,20 +210,20 @@ ul {
     background-image: url(../images/search-key-slash.svg);
     width: 19px;
     height: 20px;
+    pointer-events: none;
     z-index: 1;
 }
 
-.search-bar div {
+nav .search-bar div {
     font-size: 14px;
     color: #9d9fa3;
     font-weight: 450;
     padding-left: 8px;
     position: absolute;
     pointer-events: none;
-
 }
 
-.search-bar input:focus {
+nav .search-bar input:focus {
     background: #FFFFFF;
     border: none;
     z-index: 2;
@@ -250,27 +235,15 @@ ul {
     text-decoration: none;
 }
 
-#search-sign a:hover{
-    color: darkgray;
-}
+nav .sign-in { margin-right: 16px; }
 
-.sign-in, .sign-up {
-    transition: all 0.2s ease;
-}
-
-.sign-in {
-    margin-right: 16px;
-}
-
-.sign-up {
+nav .sign-up {
     border: #D1D5DA solid 1px;
     border-radius: 2px;
     padding: 5px 8px;
 }
 
-#nav {
-    position: relative;
-}
+#nav { position: relative; }
 
 #sign-ham {
     display: flex;
@@ -291,9 +264,6 @@ ul {
     height: 0px;
 }
 
-
-
-
 #sign-ham .ham-icon {
     border: none;
     background: none;
@@ -302,32 +272,23 @@ ul {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
+/* Media queries for nav.css */
 @media (max-width: 1011px) {
-    nav {
-        height: 50px;
-    }
+    nav { height: 50px; }
 
-    .banner {
+    nav .banner {
         height: 34px;
         padding: 0 40px;
     }
 
-    .dropdown {
+    nav .dropdown {
         opacity: 0;
         pointer-events: none;
         position: absolute;
         width: 0px;
     }
 
-    .dropdown button, .dropdown .drop-down-svg, .dropdown .right-arrow, .dropdown ul, .dropdown li, .dropdown a, .dropdown hr, .search-bar, .search-bar input, .search-bar div, #search-sign a, #search-sign .sign-in,#search-sign .sign-up {
+    nav .dropdown button, nav .dropdown .drop-down-svg, nav .dropdown .right-arrow, nav .dropdown ul, nav .dropdown li, nav .dropdown a, nav .dropdown hr, nav .search-bar, nav .search-bar input, nav .search-bar div, nav #search-sign a,  nav #search-sign .sign-in, nav #search-sign .sign-up {
         margin: 0;
         padding: 0;
         width: 0;
@@ -350,7 +311,7 @@ ul {
         cursor: pointer;
     }
 
-    .ham-icon {
+    nav .ham-icon {
         height: auto;
         width: auto;
     }
@@ -376,11 +337,7 @@ ul {
 }
 
 @media (max-width: 543px) {
-    .banner {
-        padding: 0 16px;
-    }
+    nav .banner { padding: 0 16px; }
 
-    #sign-ham .sign-up {
-        margin-right: 16px;
-    }
+    #sign-ham .sign-up { margin-right: 16px; }
 }

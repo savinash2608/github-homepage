@@ -4,8 +4,6 @@ footer {
     color: rgb(95, 103, 112);
 }
 
-
-
 footer .h-bx {
     width: 100%;
     max-width: 1280px;
@@ -35,14 +33,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer .bx1 a { text-decoration: none !important;}
 
-footer .bx1 a {
-    text-decoration: none !important;
-}
 footer h1 {
     font-size: 2rem;
     color: #24292E !important;
-
 }
 
 footer .mn-bx, footer .mn-bx2 {
@@ -50,27 +45,18 @@ footer .mn-bx, footer .mn-bx2 {
     justify-content: space-between;
 }
 
+footer .bx2, footer .mn-bx2, footer .credits, footer .social-lnks { display: flex;}
 
-
-footer .bx2, footer .mn-bx2, footer .credits, footer .social-lnks {
-    display: flex;
-}
-
-footer .bx2 {
-    flex-wrap: wrap !important;
-}
+footer .bx2 { flex-wrap: wrap !important;}
 
 footer .bx2 ul {
     width: 50% ;
     justify-content: space-between;
-
     font-size: 14px;
     margin-top: 24px ;
 }
 
-footer .lt-head {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace!important;;
-}
+footer .lt-head { font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo, monospace !important;}
 
 footer .bx2 li {
     margin: 16px 0;
@@ -83,14 +69,9 @@ footer .mn-bx2 {
     flex-wrap: wrap-reverse;
 }
 
-footer .credits, footer .social-lnks {
-    width: 100%;
-}
+footer .credits, footer .social-lnks { width: 100%;}
 
-
-footer .credits {
-    margin-top: 16px;
-}
+footer .credits { margin-top: 16px;}
 
 footer .credits li {
     margin-right: 16px;
@@ -103,16 +84,14 @@ footer img {
     margin-right: 16px;
 }
 
-
+/* Media queries for foot.css */
 @media (min-width: 544px) {
     footer .mn-bx, footer .mn-bx2 {
         padding-left: 40px;
         padding-right: 40px;
     }
 
-    footer .bx2 ul {
-        width: 25%;
-    }
+    footer .bx2 ul { width: 25%;}
 
     footer .credits {
         width: 50%;
@@ -127,40 +106,26 @@ footer img {
     footer img {
         margin-right: 0;
         margin-left: 16px;
-    }
-    
+    }    
 }
 
 @media (max-width: 1011px) {
-    footer .bx1 {
-        width: 100%;
-    }
+    footer .bx1 { width: 100%;}
     
-    footer .bx2 {
-        width: 100%;
-    }
+    footer .bx2 { width: 100%;}
 }
 
 @media (min-width: 1012px) {
-    footer .mn-bx {
-        margin-top: 80px;
-    }
+    footer .mn-bx { margin-top: 80px;}
     
     footer .mn-bx, footer .mn-bx2 {
         padding-left: 16px;
         padding-right: 16px;
-    }
-    
+    }    
 
-    footer .bx1 {
-        width: 35%;
-    }
+    footer .bx1 { width: 35%;}
     
-    footer .bx2 {
-        width: 65%;
-    }
+    footer .bx2 { width: 65%;}
 
-    footer .bx2 ul {
-        margin-top: 0;
-    }
+    footer .bx2 ul { margin-top: 0;}
 }

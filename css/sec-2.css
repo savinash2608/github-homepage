@@ -33,14 +33,12 @@
     padding: 0 24px;
 }
 
-#sec-2 .text-box a{
+#sec-2 .text-box a {
     color: rgb(235, 223, 223);
-    text-decoration: underline dotted rgb(235, 223, 223, 0.2) ;
+    text-decoration: underline dotted rgb(235, 223, 223, 0.2);
 }
 
-#sec-2 .text-box a:hover{
-    text-decoration: underline ;
-}
+#sec-2 .text-box a:hover { text-decoration: underline ; }
 
 #sec-2 .text-box h1 {
     color: #FFFFFF;
@@ -61,8 +59,7 @@
     height: fit-content;
     width: 46%;
     border-radius: 2px;
-    padding: 0 24px;
-    
+    padding: 0 24px;    
 }
 
 #sec-2 form {
@@ -81,9 +78,9 @@
     font-weight: 500;
     margin-top: 10px;
 }
+
 #sec-2 form input {
     background: #FAFBFC;
-
     height: 42px;
     border-radius: 5px;
     border: 1px solid lightgrey;
@@ -97,20 +94,16 @@
     border-radius: 3px;
 }
 
-#sec-2 form input[type="email"]:focus ~ p > span {
-    color: rgb(181, 157, 252);
-
-}
+#sec-2 form input[type="email"]:focus ~ p > span { color: rgb(181, 157, 252); }
 
 
-#sec-2 form p{
+#sec-2 form p {
     color: #24292E;
     font-size: 12px;
 }
 
-#sec-2 form p:last-child{
-    color: #8366DD;
-}
+#sec-2 form p:last-child { color: #8366DD; }
+
 #sec-2 form button {
     background-color: #2EBC4F;
     height: 70px;
@@ -119,31 +112,26 @@
     font-weight: 500;
     margin: 30px 0;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background-color 200ms ease;
 }
 
-#sec-2 form button:hover {
-    background-color: rgb(36, 160, 65);
-}
-form a {
+#sec-2 form button:hover { background-color: rgb(36, 160, 65); }
+
+#sec-2 form a {
     color: #0366D6;
     text-decoration: none;
 }
-#sec-2 form a:hover {
-    text-decoration: underline;
-}
 
+#sec-2 form a:hover { text-decoration: underline; }
 
+/* Media queries for sec-2.css */
 @media (max-width: 1011px) {
     #sec-2 .inner-box2 {
         width: 100%;
         padding: 0 40px;
     }
 
-    #sec-2 form {
-        padding: 24px 16px;
-    }
-
+    #sec-2 form { padding: 24px 16px; }
 }
 
 @media (max-width: 767px) {
@@ -175,13 +163,9 @@ form a {
 }
 
 @media (max-width: 543px) {
-    #sec-2 .inner-box1 {
-        padding: 40px 0;
-    }
+    #sec-2 .inner-box1 { padding: 40px 0; }
 
-    #sec-2 .inner-box2 {
-        padding: 0 16px;
-    }    
+    #sec-2 .inner-box2 { padding: 0 16px; }    
 
     #sec-2 .form-container {
         opacity: 0;

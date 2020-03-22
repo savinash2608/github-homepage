@@ -42,10 +42,6 @@
     align-items: center;
 }
 
-#sec-4 li {
-    transition: all 0.2s ease;
-}
-
 #sec-4 .inner-box img {
     filter: grayscale(1);
     height: 25px;
@@ -53,22 +49,15 @@
     margin: 16px 10px;
 }
 
+/* Media queries for sec-4.css */
 @media (max-width: 1011px) {
-    #sec-4 .box1 {
-        padding: 64px 0;
-    }
+    #sec-4 .box1 { padding: 64px 0; }
 
-    #sec-4 .inner-box {
-        padding: 0 40px;
-    }
-    
+    #sec-4 .inner-box { padding: 0 40px; }   
 }
 
 @media (max-width: 767px) {
-    #sec-4 .box1 {
-        padding: 48px 0;
-    }
-
+    #sec-4 .box1 { padding: 48px 0; }
 
     #sec-4 .inner-box img {
         height: 20px;
@@ -76,16 +65,14 @@
         margin: 10px;
     }
 
-    #sec-4 .inner-box h1{
+    #sec-4 .inner-box h1 {
         font-size: 18px;
         line-height: 22px;
     }
 }
 
 @media (max-width: 543px) {
-    #sec-4 .inner-box {
-        padding: 0 16px;
-    }
+    #sec-4 .inner-box { padding: 0 16px; }
     
     #sec-4 .inner-box img {
         height: 20px;

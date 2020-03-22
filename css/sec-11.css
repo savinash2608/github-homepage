@@ -1,6 +1,4 @@
-#sec-11 {
-    width: 100%;
-}
+#sec-11 { width: 100%;}
 
 #sec-11 .box1 {
     width: 100%;
@@ -16,9 +14,7 @@
     flex-flow: row wrap;
 }
 
-#sec-11 .main-box2 {
-    position: relative !important;
-}
+#sec-11 .main-box2 { position: relative !important;}
 
 #sec-11 .text {
     font-size: 20px;
@@ -31,9 +27,8 @@
     color: #586069;
 }
 
-#sec-11 .main-box2 a {
-    display: inline-block;
-}
+#sec-11 .main-box2 a { display: inline-block;}
+
 #sec-11 .inner-box {
     display: flex;
     justify-content: space-between;
@@ -43,12 +38,8 @@
     border-radius: 3px;
     color: #24292e;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: box-shadow 300ms ease;
 }
-
-
-
-
 
 #sec-11 .text-box {
     width: 100%;
@@ -57,10 +48,7 @@
     justify-content: space-between;
 }
 
-
-#sec-11 a {
-    text-decoration: none;
-}
+#sec-11 a { text-decoration: none;}
 
 #sec-11 .text-box h1 {
     color: #24292E;
@@ -76,17 +64,11 @@
     color: #24292E;
 }
 
-#sec-11 .opn-src span {
-    color: rgb(155, 62, 0);
-}
+#sec-11 .opn-src span { color: rgb(155, 62, 0);}
 
-#sec-11 .dev span {
-    color: #0366D6;
-}
+#sec-11 .dev span { color: #0366D6;}
 
-#sec-11 .bsn span {
-    color: #6F42C1;
-}
+#sec-11 .bsn span { color: #6F42C1;}
 
 #sec-11 .btn {
     border-radius: 50%;
@@ -97,7 +79,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 50px rgba(27,31,35,.07);
-    transition: all 0.3s ease;
+    transition: transform 300ms ease;
 }
 
 #sec-11 .btn h1 {
@@ -112,7 +94,7 @@
     line-height: 1.25;
 }
 
-#sec-11 .src-btn h1,#sec-11 .dev-btn h1 {
+#sec-11 .src-btn h1, #sec-11 .dev-btn h1 {
     color: white;
     font-size: 2.6rem;
 }
@@ -154,9 +136,7 @@
 }
 
 
-#sec-11 p , #sec-11 span{
-    font-size: 14px;
-}
+#sec-11 p , #sec-11 span{ font-size: 14px;}
 
 #sec-11 .hover-svg{
     position: absolute;
@@ -171,36 +151,25 @@
 #sec-11 .right-triangle {
     width: 12px;
     fill: #595959;
-    transition: all 0.2s ease;
+    transition: fill 200ms ease;
 }
 
-
-
+/* Media queries for sec-11.css */
 @media (max-width: 543px) {
-    #sec-11 .opn-src .right-triangle {
-        fill: #F66A0A;
-    }
+    #sec-11 .opn-src .right-triangle { fill: #F66A0A;}
     
-    #sec-11 .dev .right-triangle {
-        fill: #0366D6;
-    }
+    #sec-11 .dev .right-triangle { fill: #0366D6;}
     
-    #sec-11 .bsn .right-triangle {
-        fill: #6F42C1;
-    }
+    #sec-11 .bsn .right-triangle { fill: #6F42C1;}
 }
 
 @media (max-width: 767px) {
-    #sec-11 .inner-box {
-        flex-direction: column;
-    }
+    #sec-11 .inner-box { flex-direction: column;}
 
     #sec-11 .main-box {
         padding-left: 16px;
         padding-right: 16px;
     }
-
-
 }
 
 
@@ -210,36 +179,21 @@
         padding-right: 40px;
     }
 
-    #sec-11 .inner-box {
-        padding: 24px;
+    #sec-11 .inner-box { padding: 24px;}
 
-    }
+    #sec-11 .opn-src:hover > .text-box > .right-triangle { fill: #F66A0A;}
+    
+    #sec-11 .dev:hover > .text-box > .right-triangle { fill: #0366D6;}
+    
+    #sec-11 .bsn:hover > .text-box > .right-triangle { fill: #6F42C1;} 
 
-    #sec-11 .opn-src:hover > .text-box > .right-triangle {
-        fill: #F66A0A;
-    }
+    #sec-11 .inner-box:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 6px 20px 0 rgba(0, 0, 0, 0.09);}
     
-    #sec-11 .dev:hover > .text-box > .right-triangle {
-        fill: #0366D6;
-    }
-    
-    #sec-11 .bsn:hover > .text-box > .right-triangle {
-        fill: #6F42C1;
-    } 
-
-    #sec-11 .inner-box:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
-    }
-    
-    #sec-11 .inner-box:hover > .btn{
-        transform: scale(1.05);
-    }
+    #sec-11 .inner-box:hover > .btn { transform: scale(1.05);}
 }
 
 @media (min-width: 768px) {
-    #sec-11 .box1 {
-        font-size: 1rem;
-    }
+    #sec-11 .box1 { font-size: 1rem;}
 
     #sec-11 .text {
         padding-bottom: 40px;
@@ -256,16 +210,12 @@
         font-size: 1rem;
     }
 
-    #sec-11 .main-box2 a {
-        font-size: 1rem;
-    }
+    #sec-11 .main-box2 a { font-size: 1rem;}
 
     #sec-11 .inner-box {
         max-width: 400px;
         flex-direction: row;
-    }
-
-   
+    }  
 
     #sec-11 .src-btn {
         position: absolute;
@@ -294,7 +244,5 @@
         left: 25%;
     }
 
-    #sec-11 .bsn-btn {
-        left: 16%;
-    }
+    #sec-11 .bsn-btn { left: 16%;}
 }

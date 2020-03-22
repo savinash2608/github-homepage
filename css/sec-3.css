@@ -13,12 +13,11 @@
     left: 0;
 }
 
-#sec-3 .container{
+#sec-3 .container {
     position: relative;
     height: fit-content;
     width: fit-content;
 }
-
 
 #sec-3 .container::before {
     content: '';
@@ -47,8 +46,6 @@
     padding: 0px 24px;
 }
 
-
-
 .sec-3-box {
     position: relative;
     background-color: #FFFFFF;
@@ -58,9 +55,7 @@
     padding: 48px;
 }
 
-#sec-3 #top-right-svg {
-    width: 400px;
-}
+#sec-3 #top-right-svg { width: 400px; }
 
 #sec-3 .extra-icons {
     position: absolute;
@@ -77,13 +72,12 @@
     margin: 16px 0;
     width: 30%;
 }
+
 #sec-3 .box3-2 {
     width: 70%;
     display: flex;
     justify-content: flex-end;
 }
-
-
 
 #sec-3 .box3-1 h1 {
     color: #24292E;
@@ -97,7 +91,7 @@
     margin: 15px 0;
 }
 
-#sec-3 .inner-box-1, .inner-box-2 {
+#sec-3 .inner-box-1, #sec-3 .inner-box-2 {
     width: 40%;
     min-width: 200px;
     height: 258px;
@@ -108,21 +102,20 @@
     align-items: center;
 }
 
-#sec-3 .inner-box-1 h2, .inner-box-2 h2 {
+#sec-3 .inner-box-1 h2, #sec-3 .inner-box-2 h2 {
     color: #24292E;
     font-size: 18px;
     font-weight: 500;
     margin-top: 10px;
 }
 
-#sec-3 .inner-box-1 p, .inner-box-2 p {
+#sec-3 .inner-box-1 p, #sec-3 .inner-box-2 p {
     color: #586081;
     font-size: 14px;
     margin-top: 3px;
     text-align: center;
 }
     
-
 #sec-3 .inner-box-1 button {
     height: 55px;
     margin-top: 30px;
@@ -134,12 +127,10 @@
     color: #FFFFFF;
     padding: 18px 25px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background 200ms ease;
 }
 
-#sec-3 .inner-box-1 button:hover {
-    background: rgb(10, 98, 199);
-}
+#sec-3 .inner-box-1 button:hover { background: rgb(10, 98, 199); }
 
 #sec-3 .inner-box-2 button {
     height: 55px;
@@ -152,64 +143,48 @@
     color: #1074E7;
     padding: 18px 25px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: border 200ms ease;
 }
 
-#sec-3 .inner-box-2 .right-arrow, #sec-5 .right-arrow{
+#sec-3 .inner-box-2 .right-arrow {
     width: 10px;
     fill: rgb(9, 83, 167);
     transform: translateX(2px);
-    transition: all 0.2s ease;
+    transition: transform 200ms ease;
 }
 
-#sec-3 .inner-box-2 button:hover, #sec-5 button:hover {
-    border: 1px solid rgb(6, 70, 143);
-}
+#sec-3 .inner-box-2 button:hover { border: 1px solid rgb(6, 70, 143); }
 
-#sec-3 .inner-box-2 button:hover > .right-arrow, #sec-5 button:hover > .right-arrow{
-    transform: translateX(5px);
-}
+#sec-3 .inner-box-2 button:hover > .right-arrow { transform: translateX(5px); }
 
-#sec-3 svg{
+#sec-3 svg {
     width: 50px;
     fill: #2188FF;
 }
 
-
+/* Media queries for sec-3.css */
 @media (max-width: 1011px) {
-
     #sec-3 .box3 {
         flex-direction: column;
         justify-content: center;
     }
 
-    #sec-3 .box3-1, #sec-3 .box3-2 {
-        width: 100%;
-    }
+    #sec-3 .box3-1, #sec-3 .box3-2 { width: 100%; }
 
-    #sec-3 .box3-1 h1, #sec-3 .box3-1 p {
-        text-align: center;
-    }
+    #sec-3 .box3-1 h1, #sec-3 .box3-1 p { text-align: center; }
 
     #sec-3 .box3-2 {
         justify-content: center;
         align-items: center;
     }
 
-    #sec-3 .inner-box-1, .inner-box-2 {
-        height: 240px;
-    }
-    
+    #sec-3 .inner-box-1, .inner-box-2 { height: 240px; }    
 }
 
 @media (max-width: 767px) {
-    #sec-3 .box1 {
-        padding: 48px 16px 40px 16px;
-    }
+    #sec-3 .box1 { padding: 48px 16px 40px 16px; }
 
-    #sec-3 .box3-1 h1 {
-        font-size: 28px;
-    }
+    #sec-3 .box3-1 h1 { font-size: 28px; }
 
     #sec-3 .extra-icons {
         top: 0;
@@ -225,13 +200,9 @@
         width: 0;
     }
 
-    #sec-3 .container::before {
-        width: 75%;
-    }
+    #sec-3 .container::before { width: 75%; }
 
-    .sec-3-box {
-        padding: 24px;
-    }
+    .sec-3-box { padding: 24px; }
 }
 
 @media (max-width: 543px) {
@@ -241,9 +212,5 @@
         justify-content: center;
     }
 
-    #sec-3 .box2 {
-        padding: 0px;
-    }
-    
-
+    #sec-3 .box2 { padding: 0px; }
 }

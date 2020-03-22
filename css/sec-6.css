@@ -12,7 +12,6 @@
 }
 
 #sec-6 .main-box {
-
     width: 100%;
     padding-top: 40px;
     display: flex;
@@ -25,36 +24,24 @@
     width: 61%;
 }
 
-#sec-6 .main{
-    width: 78%;
-}
+#sec-6 .main { width: 78%; }
 
-#sec-6 .main-box2 {
-    width: 39%;
-}
+#sec-6 .main-box2 { width: 39%;}
 
 #sec-6 .inner-box {
     padding: 24px;
-    border: 1px solid transparent ;
+    border: 1px solid transparent;
     border-radius: 3px;
-    transition: all 0.2s ease;
+    transition: box-shadow 0.2s ease;
 }
 
-#sec-6 .inner-box:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
-}
+#sec-6 .inner-box:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 6px 20px 0 rgba(0, 0, 0, 0.09);}
 
-#sec-6 .inner-box:hover > .hover-svg {
-    opacity: 1;
-}
+#sec-6 .inner-box:hover > .hover-svg { opacity: 1;}
 
-#sec-6 .inner-box:hover > .text-box > .right-triangle {
-    fill: #0366D6;
-}
+#sec-6 .inner-box:hover > .text-box > .right-triangle { fill: #0366D6;}
 
-#sec-6 .inner-box:hover > .text-box > div > p > span {
-    text-decoration: underline rgb(2, 27, 56);
-}
+#sec-6 .inner-box:hover > .text-box > div > p > span { text-decoration: underline rgb(2, 27, 56);}
 
 #sec-6 .text-box {
     width: 100%;
@@ -63,10 +50,7 @@
     justify-content: space-between;
 }
 
-
-#sec-6 a {
-    text-decoration: none;
-}
+#sec-6 a { text-decoration: none;}
 
 #sec-6 h1 {
     color: #24292E;
@@ -85,12 +69,10 @@
 #sec-6 span {
     color: #0366D6;
     text-decoration: underline;
-    transition: all 0.2s ease;
+    transition: text-decoration 200ms ease;
 }
 
-#sec-6 p , #sec-6 span{
-    font-size: 14px;
-}
+#sec-6 p , #sec-6 span { font-size: 14px;}
 
 #sec-6 .hover-svg{
     position: absolute;
@@ -99,38 +81,32 @@
     left: 40%;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.2s ease;
+    transition: opacity 200ms ease;
 }
 
 #sec-6 .right-triangle {
     width: 12px;
     fill: #595959;
-    transition: all 0.2s ease;
+    transition: fill 200ms ease;
 }
 
-
+/* Media queries for sec-6.css */
 @media (max-width: 1011px) {
     #sec-6 .box1 {
         padding: 0 40px;
         margin: 0 auto;
     }
 
-    #sec-6 .main-box {
-        flex-direction: column;
-    }
+    #sec-6 .main-box { flex-direction: column;}
 
-    #sec-6 .main-box1, #sec-6 .main-box2 {
-        width: 100%;
-    }
+    #sec-6 .main-box1, #sec-6 .main-box2 { width: 100%;}
 
     #sec-6 .main-box1 {
         display: flex;
         justify-content: center;
     }
 
-    #sec-6 .main {
-        max-width: 64%;
-    }
+    #sec-6 .main { max-width: 64%;}
 
     #sec-6 .hover-svg{
         width: 20%;
@@ -145,13 +121,9 @@
         margin: 0 auto;
     }
 
-    #sec-6 .main-box {
-        padding: 0 16px;
-    }
+    #sec-6 .main-box { padding: 0 16px;}
 
-    #sec-6 .main-box1 {
-        padding: 40px 0 0 0;
-    }
+    #sec-6 .main-box1 { padding: 40px 0 0 0;}
 
     #sec-6 .main {
         max-width: 84%;
@@ -163,17 +135,9 @@
         margin: 24px 0;
     }
 
-    #sec-6 .inner-box:hover {
-        box-shadow: none;
-    }
+    #sec-6 .inner-box:hover { box-shadow: none;}
     
-    #sec-6 .inner-box:hover > .hover-svg {
-        opacity: 0;
-    }
+    #sec-6 .inner-box:hover > .hover-svg { opacity: 0;}    
     
-    
-    #sec-6 .inner-box:hover > .text-box > div > p > span {
-        text-decoration: underline;
-    }
-
+    #sec-6 .inner-box:hover > .text-box > div > p > span { text-decoration: underline;}
 }

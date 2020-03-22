@@ -1,6 +1,4 @@
-#sec-7 {
-    width: 100%;
-}
+#sec-7 { width: 100%;}
 
 #sec-7 .box1 {
     width: 100%;
@@ -16,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 #sec-7 .mn-box h2 {
@@ -47,38 +44,27 @@
     box-shadow: 0 2px 4px rgba(27,31,35,.15);
     border-radius: 3px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     cursor: pointer;
 }
 
-#sec-7 .mgm-resorts {
-    background-image: url(../images/resort.jpg);
-}
+#sec-7 .mgm-resorts { background-image: url(../images/resort.jpg);}
 
-#sec-7 .nationwide {
-    background-image: url(../images/jet.jpg);
+#sec-7 .nationwide { background-image: url(../images/jet.jpg);}
 
-}
+#sec-7 .sap { background-image: url(../images/pc.jpg);}
 
-#sec-7 .sap {
-    background-image: url(../images/pc.jpg);
-}
-
-#sec-7 .spotify {
-    background-image: url(../images/office.jpg);
-}
+#sec-7 .spotify { background-image: url(../images/office.jpg);}
 
 #sec-7 .card .img {
     position: relative;
     height: 200px;
-
     background-position-x: 50%;
     background-position-y: center;
     background-size: cover;
     display: block;
     box-sizing: border-box;
     border-radius: 3px;
-
 }
 
 #sec-7 .card .img::before {
@@ -90,7 +76,7 @@
     height: 52px;
     background-color: #0366d6;
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: transform 400ms ease, opacity 400ms ease;
 }
 
 #sec-7 .card .img::after {
@@ -102,19 +88,17 @@
     width: 30px;
     height: 30px;
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: transform 400ms ease, opacity 400ms ease;
 }
 
 #sec-7 .right-arrow{
     width: 10px;
     fill: rgb(9, 83, 167);
     transform: translateX(-6px);
-    transition: all 0.2s ease;
+    transition: transform 200ms ease;
 }
 
-#sec-7 .card:hover > .rest > .btn > .right-arrow {
-    transform: translateX(1px);
-}
+#sec-7 .card:hover > .rest > .btn > .right-arrow { transform: translateX(1px);}
 
 
 #sec-7 .card:hover > .img::before, #sec-7 .card:hover > .img::after {
@@ -125,11 +109,10 @@
 #sec-7 .rest {
     margin-top: 1em;
     width: 100%;
+    flex: auto;
 }
 
-#sec-7 a {
-    text-decoration: none;
-}
+#sec-7 a { text-decoration: none;}
 
 #sec-7 .card h1 {
     font-size: 1rem;
@@ -140,6 +123,7 @@
 
 #sec-7 .btn {
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     color: #0366d6;
@@ -153,23 +137,18 @@
 #sec-7 .card p {
     font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.685);
-    flex: auto;
 }
 
-
+/* Media queries for sec-7.css */
 @media (min-width: 320px) and (max-width: 544px) {
     #sec-7 .block {
         width: 100%;
         padding: 8px;
     }
 
-    #sec-7 .mn-box {
-        padding: 0 8px;
-    }
+    #sec-7 .mn-box { padding: 0 8px;}
 
-    #sec-7 .mn-box h2 {
-        margin: 0 8px 8px 8px;
-    }
+    #sec-7 .mn-box h2 { margin: 0 8px 8px 8px;}
 }
 
 @media (min-width: 544px) and (max-width: 767px){
@@ -185,22 +164,6 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1011px) {
-    #sec-7 .block {
-        width: 33.33333%;
-    }
-}
+@media (min-width:768px) and (max-width:1011px) { #sec-7 .block { width: 33.33333%;}}
 
-@media (min-width: 1012px) {
-    #sec-7 .block {
-        width: 25%;
-    }
-}
-
-
-
-
-
-
-
-
+@media (min-width: 1012px) { #sec-7 .block { width: 25%;}}
